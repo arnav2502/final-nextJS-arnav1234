@@ -34,7 +34,8 @@ export function ProfileSection({ title, sections }: ProfileSectionProps) {
       // Simulate API call
       await new Promise(resolve => setTimeout(resolve, 1000))
       toast.success("Profile updated successfully")
-    } catch (error) {
+    } catch {
+      // No need to declare an unused error variable
       toast.error("Failed to update profile")
     } finally {
       setIsUpdating(false)
@@ -93,4 +94,3 @@ export function ProfileSection({ title, sections }: ProfileSectionProps) {
     </div>
   )
 }
-
