@@ -1,8 +1,9 @@
 'use client'
 
 import { useSearchParams } from 'next/navigation'
+import { Suspense } from 'react'
 
-export default function Search() {
+function SearchComponent() {
   const searchParams = useSearchParams()
   const query = searchParams.get('q')
 
@@ -15,3 +16,10 @@ export default function Search() {
   )
 }
 
+export default function Search() {
+  return (
+    <Suspense fallback={<div>Loading search results...</div>}>
+      <SearchComponent />
+    </Suspense>
+  )
+}
