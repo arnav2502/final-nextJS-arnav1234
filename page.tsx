@@ -1,6 +1,6 @@
-import { NavBar } from "./nav-bar"
-import { SideNav } from "./side-nav"
-import { SettingsNav } from "./settings-nav"
+import { NavBar } from "./components/nav-bar";
+import { SideNav } from "./components/side-nav"
+import { SettingsNav } from "./components/settings-nav"
 
 export default function SettingsPage() {
   return (
