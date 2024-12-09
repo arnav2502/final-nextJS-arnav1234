@@ -3,7 +3,7 @@
 import Link from "next/link"
 import { usePathname } from 'next/navigation'
 import { cn } from "@/lib/utils"
-import { Activity, Bell, FileSignature, History, Home, LogOut, Settings, User, Mail, Database } from 'lucide-react'
+import { Activity, Bell, FileSignature, Home, LogOut, Settings, User, Mail, Database } from 'lucide-react' // Removed 'History'
 import { Button } from "@/components/ui/button"
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 
@@ -65,4 +65,3 @@ export function SideNav({ className }: SideNavProps) {
     </div>
   )
 }
-
